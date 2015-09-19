@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:scrollbars="vertical">
+
+            <TableRow
+                android:id="@+id/pECategoryId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pECategoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_column="0"
+                    android:text="Category"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/pECategorySelectLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_column="1"
+                    android:onClick="onCategoryClick"
+                    android:text="Click to Select Category"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/pECategorySelectEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/pESubCategoryId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pESubCategoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_column="0"
+                    android:text="Sub-Category"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/pESubCategorySelectLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_column="1"
+                    android:onClick="onSubCategoryClick"
+                    android:text="Click to Select your Sub-Category"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/pESubCategorySelectEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:inputType="numberDecimal"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/pESubjectId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pESubjectLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_column="0"
+                    android:text="Subject"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/pESubjectEdit"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_column="1"
+                    android:maxHeight="25dp"
+                    android:maxLines="1"
+                    android:minHeight="25dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/pEDateId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pEDateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_column="0"
+                    android:text="When"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/pEDatePick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:ems="10"
+                    android:inputType="date" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/pEPlaceId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pEPlaceLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_column="0"
+                    android:text="Place"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/pEPlaceEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/pEDescriptionId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pEDescriptionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_column="0"
+                    android:text="Description"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/pEDescriptionEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@color/counter_text_color"
+                    android:ems="10"
+
+                    android:inputType="textMultiLine"
+                    android:maxHeight="200px"
+                    android:minLines="5"
+                    android:overScrollMode="always"
+                    android:scrollHorizontally="false"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbarFadeDuration="0"
+                    android:scrollbarSize="15px"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/pESendOptionId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pESendOptionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_column="0"
+                    android:text="Send this event to "
+                    android:textSize="16dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/pERadioPrivate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/radio_private" />
+
+                        <RadioButton
+                            android:id="@+id/pERadioPublic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_public" />
+                    </LinearLayout>
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pEPrivateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_column="0"
+                    android:text="Select Group"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/pEPrivateGroupSelectLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_column="1"
+                    android:onClick="onCategoryClick"
+                    android:text="Click to Select your group"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/pEPrivateGroupSelectEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/pEPublicTagsId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pEPublicTagsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_column="0"
+                    android:text="Tags / Keywords"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/pEPublicTagsEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/pESaveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Save" />
+
+                <Button
+                    android:id="@+id/pEResetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Reset" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</ScrollView>
