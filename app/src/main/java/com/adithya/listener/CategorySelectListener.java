@@ -62,9 +62,9 @@ public class CategorySelectListener implements View.OnClickListener {
                         categoryTextView.setText(strName);
                         categoryValueText.setText(which + "");
 
-                        if (!categoryValueText.getText().equals(which + "")) {
-                            subCategoryTextView.setText("Click to Select your Sub-Category");
-                        }
+//                        if (!categoryValueText.getText().equals(which + "")) {
+//                            subCategoryTextView.setText("Click to Select your Sub-Category");
+//                        }
                     }
                 });
 
