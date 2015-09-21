@@ -3,177 +3,201 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical">
 
-        <TableLayout
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
+            android:orientation="vertical"
             android:scrollbars="vertical">
 
-            <TableRow
-                android:id="@+id/pESubscribeSubjectId"
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
 
-                <TextView
-                    android:id="@+id/pESubscribeSubjectLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:layout_column="0"
-                    android:text="Title"
-                    android:textSize="16dp" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:scrollbars="vertical">
 
-                <EditText
-                    android:id="@+id/pESubscribeSubjectEdit"
-                    android:layout_width="100dp"
-                    android:layout_height="25dp"
-                    android:layout_column="1"
-                    android:maxHeight="25dp"
-                    android:maxLines="1"
-                    android:minHeight="25dp" />
-            </TableRow>
+                    <TableRow
+                        android:id="@+id/pESubscribeSubjectId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-            <TableRow
-                android:id="@+id/pESubscribeCategoryId"
+                        <TextView
+                            android:id="@+id/pESubscribeSubjectLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_column="0"
+                            android:text="Title"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/pESubscribeSubjectEdit"
+                            android:layout_width="100dp"
+                            android:layout_height="25dp"
+                            android:layout_column="1"
+                            android:maxHeight="25dp"
+                            android:maxLines="1"
+                            android:minHeight="25dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/pESubscribeCategoryId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/pESubscribeCategoryLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="0"
+                            android:text="Category"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pESubscribeCategorySelectLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:onClick="onCategoryClick"
+                            android:text="Click to Select Category"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/pESubscribeCategorySelectEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/pESubscribeSubCategoryId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/pESubscribeSubCategoryLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="0"
+                            android:text="Sub-Category"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pESubscribeSubCategorySelectLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:onClick="onSubCategoryClick"
+                            android:text="Click to Select your Sub-Category"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/pESubscribeSubCategorySelectEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:inputType="numberDecimal"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/pESubscribePlaceId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/pESubscribePlaceLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_column="0"
+                            android:text="Place"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/pESubscribePlaceEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/pESubscribePublicTagsId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/pESubscribePublicTagsLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_column="0"
+                            android:text="Tags / Keywords"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/pESubscribePublicTagsEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/pESubscribeSaveButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:text="Save" />
+
+                        <Button
+                            android:id="@+id/pESubscribeResetButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="Reset" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
 
-                <TextView
-                    android:id="@+id/pESubscribeCategoryLabel"
+                <ListView
+                    android:id="@+id/sElistView"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_column="0"
-                    android:text="Category"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:id="@+id/pESubscribeCategorySelectLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
+                    android:layout_height="500dp"
+                    android:layout_alignParentTop="true"
                     android:layout_column="1"
-                    android:onClick="onCategoryClick"
-                    android:text="Click to Select Category"
-                    android:textSize="16dp" />
+                    android:layout_marginTop="31dp"
+                    android:layout_toLeftOf="@+id/txtLabel"
+                    android:layout_toStartOf="@+id/txtLabel" />
 
-                <EditText
-                    android:id="@+id/pESubscribeCategorySelectEditText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="1"
-                    android:ems="10"
-                    android:inputType="numberDecimal"
-                    android:visibility="invisible" />
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/pESubscribeSubCategoryId"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/pESubscribeSubCategoryLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_column="0"
-                    android:text="Sub-Category"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:id="@+id/pESubscribeSubCategorySelectLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_column="1"
-                    android:onClick="onSubCategoryClick"
-                    android:text="Click to Select your Sub-Category"
-                    android:textSize="16dp" />
-
-                <EditText
-                    android:id="@+id/pESubscribeSubCategorySelectEditText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="1"
-                    android:inputType="numberDecimal"
-                    android:visibility="invisible" />
-            </TableRow>
-
-
-            <TableRow
-                android:id="@+id/pESubscribePlaceId"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/pESubscribePlaceLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:layout_column="0"
-                    android:text="Place"
-                    android:textSize="16dp" />
-
-                <EditText
-                    android:id="@+id/pESubscribePlaceEdit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="1" />
-
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/pESubscribePublicTagsId"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/pESubscribePublicTagsLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:layout_column="0"
-                    android:text="Tags / Keywords"
-                    android:textSize="16dp" />
-
-                <EditText
-                    android:id="@+id/pESubscribePublicTagsEdit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="1" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/pESubscribeSaveButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:text="Save" />
-
-                <Button
-                    android:id="@+id/pESubscribeResetButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="1"
-                    android:text="Reset" />
-            </TableRow>
-        </TableLayout>
-    </LinearLayout>
-
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 </RelativeLayout>

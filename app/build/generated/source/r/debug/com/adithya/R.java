@@ -51,7 +51,7 @@ public final class R {
         public static final int LastName=0x7f0a0031;
         public static final int Location=0x7f0a003b;
         public static final int NickName=0x7f0a002b;
-        public static final int action_settings=0x7f0a0057;
+        public static final int action_settings=0x7f0a005a;
         public static final int buttonMyProfileSave=0x7f0a0041;
         public static final int counter=0x7f0a0008;
         public static final int dialogButtonOK=0x7f0a0005;
@@ -68,7 +68,7 @@ public final class R {
         public static final int image=0x7f0a0003;
         public static final int listView=0x7f0a000a;
         public static final int list_adithyamenu=0x7f0a0002;
-        public static final int lv=0x7f0a0056;
+        public static final int lv=0x7f0a0057;
         public static final int pECategoryId=0x7f0a000b;
         public static final int pECategoryLabel=0x7f0a000c;
         public static final int pECategorySelectEditText=0x7f0a000e;
@@ -122,7 +122,10 @@ public final class R {
         public static final int pESubscribeSubjectLabel=0x7f0a0043;
         public static final int radioFemale=0x7f0a0036;
         public static final int radioMale=0x7f0a0035;
-        public static final int subject=0x7f0a0055;
+        public static final int sEDetailButton=0x7f0a0059;
+        public static final int sEDetailText=0x7f0a0058;
+        public static final int sElistView=0x7f0a0055;
+        public static final int subject=0x7f0a0056;
         public static final int text=0x7f0a0004;
         public static final int title=0x7f0a0007;
         public static final int txtLabel=0x7f0a0009;
@@ -147,6 +150,8 @@ public final class R {
         public static final int fragment_subscription=0x7f030008;
         public static final int inbox_list_item_view=0x7f030009;
         public static final int list=0x7f03000a;
+        public static final int subscribe_dialog=0x7f03000b;
+        public static final int subscribe_list_item_view=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f090000;
