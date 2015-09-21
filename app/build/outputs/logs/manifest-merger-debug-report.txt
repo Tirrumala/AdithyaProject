@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:2:1-31:12
 	xmlns:android
 		ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -24,7 +24,7 @@ ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:7
 		INJECTED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml
 		INJECTED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml
 application
-ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:11:5-25:19
+ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:11:5-29:19
 	android:label
 		ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:14:9-41
 	android:allowBackup
@@ -49,3 +49,9 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
 		ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:22:27-74
+activity#com.adithya.activity.GroupItemDetailActivity
+ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:25:9-28:20
+	android:label
+		ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:27:13-69
+	android:name
+		ADDED from E:\MyWorkSpace\AdithyaGood\Adithya\app\src\main\AndroidManifest.xml:26:13-61

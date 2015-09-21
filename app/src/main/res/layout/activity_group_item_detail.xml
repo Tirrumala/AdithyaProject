@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.adithya.activity.GroupItemDetailActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/list_item_title" />
+
+        <Button
+            android:id="@+id/gDAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical">
+
+            <ListView
+                android:id="@+id/gDlistView"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_alignParentTop="true"
+                android:layout_column="1"
+                android:layout_marginTop="31dp"
+                android:layout_toLeftOf="@+id/txtLabel"
+                android:layout_toStartOf="@+id/txtLabel" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -68,4 +68,5 @@
         <item>OfficeMates</item>
         <item>TravelMates</item>
     </string-array>
+    <string name="title_activity_group_item_detail">GroupItemDetail</string>
 </resources>
