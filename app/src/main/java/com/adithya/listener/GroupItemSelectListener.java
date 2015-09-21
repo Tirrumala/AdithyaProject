@@ -34,7 +34,6 @@ public class GroupItemSelectListener implements View.OnClickListener, AdapterVie
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
         System.out.println("THIRUABC" + i + "  " + l);
-
         Intent groupDetailIntent = new Intent(subscriptionFragment.getActivity(), GroupItemDetailActivity.class);
         System.out.println("THIRUABC" + subscriptionFragment.getActivity() + "  " + groupDetailIntent);
         subscriptionFragment.startActivity(groupDetailIntent);

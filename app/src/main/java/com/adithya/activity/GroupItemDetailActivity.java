@@ -4,8 +4,16 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.ListView;
 
 import com.adithya.R;
+import com.adithya.adapter.GroupContactsListAdapter;
+import com.adithya.bean.GroupContactsListBean;
+import com.adithya.listener.GroupContactsSelectListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class GroupItemDetailActivity extends Activity {
 
@@ -13,6 +21,8 @@ public class GroupItemDetailActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_item_detail);
+
+        initializeListeners();
     }
 
     @Override
@@ -35,5 +45,27 @@ public class GroupItemDetailActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void initializeListeners() {
+        ListView listView = (ListView) findViewById(R.id.gDlistView);
+
+        List groupContactsList = new ArrayList();
+        groupContactsList.add(new GroupContactsListBean("Thiru", "9900090900", "x"));
+        groupContactsList.add(new GroupContactsListBean("ABCDE", "9900090901", "x"));
+        groupContactsList.add(new GroupContactsListBean("FGHIJ", "9900090902", "x"));
+        groupContactsList.add(new GroupContactsListBean("KLMN", "9900090903", "x"));
+        groupContactsList.add(new GroupContactsListBean("OPQRSTUV", "9900090904", "x"));
+
+        GroupContactsListAdapter adapter;
+        adapter = new GroupContactsListAdapter(this.getApplicationContext(), R.layout.group_contacts_item_view, groupContactsList);
+
+        listView.setAdapter(adapter);
+
+        ImageView groupContactPhoto = (ImageView) findViewById(R.id.groupContactPhoto);
+        ImageView groupContactRemove = (ImageView) findViewById(R.id.groupContactRemove);
+
+        // add  listener
+        listView.setOnItemClickListener(new GroupContactsSelectListener());
     }
 }
